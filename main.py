@@ -25,8 +25,7 @@ desired_word = input("Please enter the word that you'd like to Nato phonetics of
 desired_word = desired_word.upper()
 # print(desired_word)
 # print(nato_dict)
-result = []
-for letter in desired_word:
-    if letter in nato_dict:
-        result.append(nato_dict[letter])
+
+result = [nato_dict[letter] for letter in desired_word if letter in nato_dict]
+
 print(result)
